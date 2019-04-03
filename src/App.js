@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import Navbar from "./components/Navbar";
+import React, { Component } from "react";
+import Navbars from "./components/Navbar";
 import Cards from "./components/cards";
 import flags from "./images.json";
 
@@ -14,14 +14,14 @@ class App extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <Navbar score={this.state.score} topScore={this.state.topScore}/>
+                <Navbars score={this.state.score} topScore={this.state.topScore} />
                 <section className="jubotron-fluid">
-                    <Cards flags={this.state.flags}/>
+                    <Cards flags={this.state.flags} />
                 </section>
             </div>
         )
     }
-    
+
 }
 
 export default App;

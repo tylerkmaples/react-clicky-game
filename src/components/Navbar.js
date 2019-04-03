@@ -1,20 +1,26 @@
 import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import NavbarMessage from './NavbarMessage';
 
-function Navbar(props) {
+function Navbars(props) {
     return (
-        <nav className="navbar navbar-dark bg-dark">
-            <div className="mr-auto text-white">
-                <h1>Clicky Game!</h1>
-            </div>
-            <div className="mx-auto text-white">
-                <span className="midHead"><h3>Click An Image To Begin!</h3></span>
-            </div>
-            <div className="ml-auto text-white">
-                <h4>Score: {props.score} </h4>
-                <h4>Top Score: {props.topScore}</h4>
-            </div>
-        </nav>
+        <Navbar bg="dark" variant="dark" expand="lg">
+            <Container class="fluid">
+                <Col md='auto'>
+                    <h1>Clicky Game!</h1>
+                </Col>
+                <Col md='auto'>
+                    <NavbarMessage />
+                </Col>
+                <Col md='auto'>
+                    <h4>Score: {props.score} </h4>
+                    <h4>Top Score: {props.topScore}</h4>
+                </Col>
+            </Container>
+        </Navbar>
     )
 }
 
-export default Navbar;
+export default Navbars;
