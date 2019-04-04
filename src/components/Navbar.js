@@ -6,19 +6,18 @@ import NavbarMessage from './NavbarMessage';
 
 function Navbars(props) {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" style={{ color: "white"}}>
-            <Container class="fluid">
-                <Col md='auto'>
-                    <h1>Clicky Game!</h1>
+        <Navbar bg="light" variant="dark" expand="lg" sticky='top'>
+            
+                <Col>
+                    <h3>Click-olas Cage Game!</h3>
+                </Col>
+                <Col >
+                    <h4>Click An Image To Begin!</h4>
                 </Col>
                 <Col md='auto'>
-                    {/* <NavbarMessage /> */}
+                    <h4>Score: {props.score}/12 </h4>
                 </Col>
-                <Col md='auto'>
-                    <h4>Score: {props.score} </h4>
-                    <h4>Top Score: {props.topScore}</h4>
-                </Col>
-            </Container>
+            
         </Navbar>
     )
 }

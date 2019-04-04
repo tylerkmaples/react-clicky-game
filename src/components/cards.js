@@ -4,16 +4,16 @@ import CardColumns from 'react-bootstrap/CardColumns';
 
 function Cards(props) {
     return (
-        <div class="container-fluid">
-            <div class="container" style={{margin: "0!important", padding: '0!important'}}>
-                <CardColumns>
+        <div className="container-fluid mx-auto" style={{background: 'whiteSmoke'}}>
+            
+                <CardColumns style={{padding: '0 45px 0 45px'}}>
                     {props.flags.map(item => (
-                        <Card key={item.id} onClick={() => props.handleClick(item.id)} style={{ width: "14rem" }} className="p-0">
-                            <Card.Img variant='top' src={item.image} alt='flag' style={{ height: "9rem" }}/>
+                        <Card key={item.id} onClick={() => props.handleClick(item.id)} style={{ width: "100%", border:'none', background: 'transparent'}} className="p-0">
+                            <Card.Img variant='top' src={item.image} alt='flag' style={{ height: "20.5vh", width:'70%', marginLeft: '16%' }}/>
                         </Card>
                     ))}
                 </CardColumns>
-            </div>
+        
             
         </div>
     )

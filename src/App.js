@@ -7,7 +7,6 @@ class App extends Component {
     state = {
         flags,
         score: 0,
-        topScore: 12,
         clicked: false,
         clickedArr: []
     };
@@ -59,12 +58,10 @@ class App extends Component {
 
 
     render() {
-        return (
-            <div className="container-fluid">
-                <Navbars score={this.state.score} topScore={this.state.topScore} />
-                <section className="jubotron-fluid">
-                    <Cards flags={this.state.flags} handleClick={this.handleClick} />
-                </section>
+        return ( 
+            <div className="container-fluid px-0">
+                <Navbars score={this.state.score} />
+                <Cards flags={this.state.flags} handleClick={this.handleClick} />
             </div>
         )
     }
