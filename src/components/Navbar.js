@@ -6,13 +6,13 @@ import NavbarMessage from './NavbarMessage';
 
 function Navbars(props) {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg" style={{ color: "white"}}>
             <Container class="fluid">
                 <Col md='auto'>
                     <h1>Clicky Game!</h1>
                 </Col>
                 <Col md='auto'>
-                    <NavbarMessage />
+                    {/* <NavbarMessage /> */}
                 </Col>
                 <Col md='auto'>
                     <h4>Score: {props.score} </h4>

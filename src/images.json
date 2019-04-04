@@ -1,62 +1,62 @@
 [
     {
         "id": 1,
-        "image": "assets/images/brazil.png",
+        "image": "assets/images/nickCage.jpg",
         "clicked": false
     },
     {
         "id": 2,
-        "image": "assets/images/Canda.png",
+        "image": "assets/images/nickCageYoda.jpg",
         "clicked": false
     },
     {
         "id": 3,
-        "image": "assets/images/China.png",
+        "image": "assets/images/nickMona.jpg",
         "clicked": false
     },
     {
         "id": 4,
-        "image": "assets/images/Germany.jpg",
+        "image": "assets/images/nickVold.jpg",
         "clicked": false
     },
     {
         "id": 5,
-        "image": "assets/images/Iceland.png",
+        "image": "assets/images/nickBunny.jpg",
         "clicked": false
     },
     {
         "id": 6,
-        "image": "assets/images/japan.png",
+        "image": "assets/images/nickBaby.jpg",
         "clicked": false
     },
     {
         "id": 7,
-        "image": "assets/images/korea.png",
+        "image": "assets/images/nickMontana.jpg",
         "clicked": false
     },
     {
         "id": 8,
-        "image": "assets/images/Mexico.png",
+        "image": "assets/images/nickGan.jpg",
         "clicked": false
     },
     {
         "id": 9,
-        "image": "assets/images/new-Zealand.png",
+        "image": "assets/images/nickET.jpg",
         "clicked": false
     },
     {
         "id": 10,
-        "image": "assets/images/paraguay.png",
+        "image": "assets/images/nickCat.jpg",
         "clicked": false
     },
     {
         "id": 11,
-        "image": "assets/images/south-africa.png",
+        "image": "assets/images/nickFace.png",
         "clicked": false
     },
     {
         "id": 12,
-        "image": "assets/images/USA.png",
+        "image": "assets/images/nickFrodo.jpg",
         "clicked": false
     }
 ]

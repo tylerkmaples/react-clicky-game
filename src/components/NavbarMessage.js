@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 
 
 
 
-class NavbarMessage extends Component {
+// class NavbarMessage extends Component {
 
-    state = {
-        message: ""
-    }
-
-
+//     state = {
+//         message: ""
+//     }
 
 
 
 
 
-}
 
-export default NavbarMessage;
+
+// }
+
+// export default NavbarMessage;
