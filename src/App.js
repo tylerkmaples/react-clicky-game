@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import Navbars from "./components/Navbar";
 import Cards from "./components/cards";
 import flags from "./images.json";
-
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
 class App extends Component {
     state = {
         flags,
         score: 0,
         clicked: false,
+        message: "Click Any To Start",
         clickedArr: []
     };
 
@@ -31,6 +33,7 @@ class App extends Component {
         this.setState({
             score: 0,
             clicked: false,
+            message: 'You Clicked the same Cage. Try Again!',
             clickedArr: []
         })
     };
@@ -49,6 +52,7 @@ class App extends Component {
             this.state.clickedArr.push(id)
             this.setState({ score: this.state.score + 1})
             this.shuffle();
+            this.setState({ message: 'Correct' })
         }
         // check if clicked item "clicked key" is false
         // set clicked item clicked to true 
@@ -59,8 +63,15 @@ class App extends Component {
 
     render() {
         return ( 
-            <div className="container-fluid px-0">
-                <Navbars score={this.state.score} />
+            <div className="container-fluid px-0" style={{backgroundImage: `url(assets/images/footer_lodyas.png)`}}>
+                <Navbars score={this.state.score} message={this.state.message} />
+                <Container fluid style={{height: "40vh", background: 'none'}}>
+                    <div style={{textAlign: 'center', color: 'white', marginTop: '150px'}}>
+                        <h1>Click-olas Cage Game!</h1>
+                        <h3>Click on an image to gain points, but don't click an image more than once.</h3>
+                    </div>
+                    
+                </Container>
                 <Cards flags={this.state.flags} handleClick={this.handleClick} />
             </div>
         )

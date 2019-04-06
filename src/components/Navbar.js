@@ -6,13 +6,13 @@ import NavbarMessage from './NavbarMessage';
 
 function Navbars(props) {
     return (
-        <Navbar bg="light" variant="dark" expand="lg" sticky='top'>
+        <Navbar bg="dark" variant="dark" expand="lg" sticky='top' style={{color: 'white'}}>
             
                 <Col>
                     <h3>Click-olas Cage Game!</h3>
                 </Col>
                 <Col >
-                    <h4>Click An Image To Begin!</h4>
+                    <h4>{props.message}</h4>
                 </Col>
                 <Col md='auto'>
                     <h4>Score: {props.score}/12 </h4>
